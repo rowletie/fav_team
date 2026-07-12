@@ -1,0 +1,353 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+.skip-link {
+
+    position: absolute;
+    left: -999px;
+    top: 10px;
+
+    background-color: #000;
+    color: white;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    z-index: 100;
+}
+
+
+.skip-link:focus {
+
+    left: 20px;
+
+}
+
+
+header {
+
+    background-color: #c8102e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+header h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+
+}
+
+
+nav ul {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    list-style: none;
+
+    background-color: #041e42;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover {
+
+    background-color: #c8102e;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+.active {
+
+    background-color: #c8102e;
+
+}
+
+main {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 30px 0;
+
+}
+
+
+h2 {
+
+    color: #c8102e;
+
+    margin: 25px 0;
+
+    text-align: center;
+
+}
+
+
+p {
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-top: 30px;
+
+}
+
+
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+}
+
+
+.gallery figure {
+
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+}
+
+
+
+.players {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.player-card {
+
+    background-color: white;
+
+    width: 300px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    border: 5px solid #041e42;
+    padding: 10px;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+.gallery img,
+.player-card img,
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+img:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+.gallery img:nth-child(even) {
+
+    border-radius: 50%;
+
+}
+
+
+
+
+.card {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+
+.card h3,
+.player-card h3 {
+
+    color: #041e42;
+
+    margin: 15px 0;
+
+}
+
+
+
+
+ul {
+
+    margin-left: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+
+li {
+
+    margin-bottom: 10px;
+
+}
+
+
+
+
+footer {
+
+    background-color: #041e42;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+}
+
+
+
+@media(max-width:800px) {
+
+
+    nav ul {
+
+        flex-direction: column;
+
+    }
+
+
+    .grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+}
+.card img,
+.gallery img,
+.player-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
